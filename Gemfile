@@ -8,7 +8,7 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 # gem 'rails', '~> 5.1.6', '>= 5.1.6.2'
-gem 'rails', '~> 5.1.6', '>= 5.1.6.1' 
+gem 'rails', '~> 5.1.6', '>= 5.1.6.1'
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3'
 gem 'sqlite3','1.3.13'
@@ -54,3 +54,24 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'hyrax', '2.4.1'
+
+group :development, :test do
+  gem 'fcrepo_wrapper', '0.9.0'
+end
+
+group :development, :test do
+  gem 'solr_wrapper', '>= 0.3'
+end
+
+gem 'rsolr', '>= 1.0'
+gem 'bootstrap-sass', '~> 3.0'
+gem 'twitter-typeahead-rails', '0.11.1.pre.corejavascript'
+gem 'jquery-rails'
+gem 'devise'
+gem 'devise-guests', '~> 0.6'
+group :development, :test do
+  gem 'rspec-rails'
+end
+
+gem 'riiif', '~> 2.0'
