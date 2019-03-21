@@ -19,7 +19,7 @@ DogBiscuits.config do |config|
   # Models to be used in the current application.
   #   Available models are: ConferenceItem, Dataset, DigitalArchivalObject, ExamPaper, JournalArticle, Package, PublishedWork, Thesis
   #   Add values in constantized form, eg. 'ConferenceItem'
-  # config.selected_models = []
+  config.selected_models = ['ExamPaper']
 
   # Use the blacklight date range gem to provide a single combined range filter
   #   default = false
@@ -29,7 +29,7 @@ DogBiscuits.config do |config|
   # Use the bootstrap date picker for date fields
   #   default = false
   #   nb. run rails g dog_biscuits:dates_generator to install
-  # config.date_picker = true
+  config.date_picker = true
 
   # Date fields on which to apply the date picker
   #   default is everything in the date_properties config
@@ -74,12 +74,12 @@ DogBiscuits.config do |config|
   # Date properties
   # These will be indexed into the date_picker if present
   # config.date_properties += []
-  
-  # Enable restricted properties in the form. 
+
+  # Enable restricted properties in the form.
   # If set to false, no restrictions will be applied
   # Default is false
   # config.restricted_properties_enabled = false
-  
+
   # Restrict the following properties in the form to the role specified in
   #   restricted_role
   # Restrictions apply to 'below the fold' properties only, they are not
