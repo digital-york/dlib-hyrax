@@ -2,7 +2,7 @@ development:
   archivist:
     - archivist1@example.com
   admin:
-    - YOURSELF@york.ac.uk
+    - ps552@york.ac.uk
 
 
 test:
