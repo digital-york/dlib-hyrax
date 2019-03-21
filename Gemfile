@@ -56,6 +56,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'hyrax', '2.4.1'
 gem 'dog_biscuits', git: 'https://github.com/samvera-labs/dog_biscuits.git'
+gem 'bootstrap-datepicker-rails'
 
 group :development, :test do
   gem 'fcrepo_wrapper', '0.9.0'
