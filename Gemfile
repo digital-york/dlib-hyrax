@@ -58,6 +58,7 @@ gem 'hyrax', '2.4.1'
 gem 'dog_biscuits', git: 'https://github.com/samvera-labs/dog_biscuits.git'
 gem 'bootstrap-datepicker-rails'
 gem 'hyrax-batch_ingest', git: 'https://github.com/samvera-labs/hyrax-batch_ingest.git'
+gem 'csv'
 group :development, :test do
   gem 'fcrepo_wrapper', '0.9.0'
 end
