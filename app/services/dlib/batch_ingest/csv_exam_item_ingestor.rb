@@ -3,7 +3,7 @@ require 'dog_biscuits'
 module Dlib
   module BatchIngest
     # ingest a new record batch from csv metadata. WIP!
-    class CSVExamItemIngestor < Hyrax::BatchIngest::BatchItemIngester
+    class CsvExamItemIngestor < Hyrax::BatchIngest::BatchItemIngester
       # this method is not yet finished, is still in process of experimentation
       def ingest
         # this is iterating through the json-ised records
@@ -17,7 +17,7 @@ module Dlib
         logfile.close
 
         # TODO we should use actor methods to do this in a hyrax style
-        actor = ::Hyrax::CurationConcern.actor # we should use actor methods
+        actor = ::Hyrax::CurationConcern.actor
         # TODO parameterise - this is initial placeholder_to_make_it_valid
         user = User.find_by_email 'ps552@york.ac.uk'
         # ability = ::Ability.new(user)
