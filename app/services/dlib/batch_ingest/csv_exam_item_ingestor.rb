@@ -6,7 +6,7 @@ module Dlib
     class CsvExamItemIngestor < Hyrax::BatchIngest::BatchItemIngester
       # this method is not yet finished, is still in process of experimentation
       def ingest
-        # this is iterating through the json-ised records
+        # this  iterates through the json-ised records
         # try to stop the database locking
         ActiveRecord::Base.connection.execute("BEGIN TRANSACTION; END;")
         logfile = File.open('/home/vagrant/csvingestor.log', 'a')

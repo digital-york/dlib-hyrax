@@ -1,0 +1,5 @@
+ingest_types:
+  csv_exams:
+    label: "CSV (Exam Papers)"
+    reader: "Dlib::BatchIngest::CsvExamsReader"
+    ingester: "Dlib::BatchIngest::CsvExamItemIngestor"
