@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/samvera-labs/dog_biscuits.git
+  revision: bb3cab93a870b3ef91eab993657a4b88c6088fb8
+  specs:
+    dog_biscuits (0.5.6)
+      hyrax (>= 2, < 3)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -110,6 +117,8 @@ GEM
       bootstrap-sass (~> 3.0)
       openseadragon (>= 0.2.0)
       rails
+    bootstrap-datepicker-rails (1.8.0.1)
+      railties (>= 3.0)
     bootstrap-sass (3.3.7)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
@@ -750,12 +759,14 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-datepicker-rails
   bootstrap-sass (~> 3.0)
   byebug
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
   devise
   devise-guests (~> 0.6)
+  dog_biscuits!
   fcrepo_wrapper (= 0.9.0)
   hyrax (= 2.4.1)
   jbuilder (~> 2.5)
